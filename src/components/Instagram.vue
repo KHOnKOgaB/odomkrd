@@ -34,7 +34,7 @@ export default {
 @import '../assets/scss/main.scss';
 .instagram {
   background-color: $white;
-  padding: 8rem 0rem;
+  padding: 2rem 0rem 8rem;
 }
 .inst-img {
   width: 294px;

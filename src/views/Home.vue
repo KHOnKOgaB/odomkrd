@@ -4,6 +4,7 @@
     <Address></Address>
     <Events></Events>
     <Ministries></Ministries>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Banner from '../components/Banner.vue';
 import Address from '../components/Address.vue';
 import Events from '../components/Events.vue';
 import Ministries from '../components/Ministries.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'home',
@@ -19,7 +21,8 @@ export default {
     Banner,
     Address,
     Events,
-    Ministries
+    Ministries,
+    Footer
   }
 }
 </script>

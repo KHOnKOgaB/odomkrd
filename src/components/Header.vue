@@ -9,10 +9,10 @@
 
       <b-collapse id="navbar" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item class="text-uppercase">главная</b-nav-item>
+          <b-nav-item to="/" class="text-uppercase">главная</b-nav-item>
           <b-nav-item class="text-uppercase">медиа</b-nav-item>
           <b-nav-item class="text-uppercase">мечтай</b-nav-item>
-          <b-nav-item class="text-uppercase">о нас</b-nav-item>
+          <b-nav-item to="/about" class="text-uppercase">о нас</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
