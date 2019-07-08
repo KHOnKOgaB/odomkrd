@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/scss/main.scss';
 .footer {
   background-color: #2f2f2f;
@@ -40,6 +40,9 @@ export default {
     transform: scale(1.2);
     color: #FFCB26;
   }
+}
+.nav-link {
+  padding: 0.5rem 0.5rem;
 }
 .contacts-item {
   a {
