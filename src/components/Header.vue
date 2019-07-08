@@ -29,5 +29,16 @@ export default {
 </script>
 <style lang="scss">
 @import '../assets/scss/main.scss';
+.nav-item {
+  font-size: 1.2rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  a {
+    color: $white !important;
+    &:hover {
+      color: #FFCB26 !important;
+    }
+  }
 
+}
 </style>

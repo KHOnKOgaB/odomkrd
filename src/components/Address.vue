@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="address text-center container">
-    <p>г. Краснодар, ул. Стадионная, д. 45</p>
-    <p>Воскресенье 10:00</p>
+    <p class="mb-4">г. Краснодар, ул. Стадионная, д. 45</p>
+    <p class="mb-4">Воскресенье 10:00</p>
     <b-button  variant="primary-outline how-to" href="https://yandex.ru/maps/-/CCgaFXJ1" class="text-uppercase shadow">
         как проехать
     </b-button>

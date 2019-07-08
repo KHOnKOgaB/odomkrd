@@ -1,25 +1,26 @@
 <template lang="html">
   <div class="carousel container position-relative">
-    <font-awesome-icon class="arrows arrow-left" icon="chevron-left"/>
-    <Slick :options="slickOptions">
+    <font-awesome-icon @click="prev" class="arrows arrow-left" icon="chevron-left"/>
+    <Slick
+    ref="slick"
+    :options="slickOptions">
       <img class="carousel-item" src="../assets/img/carousel-item1.jpg">
       <img class="carousel-item" src="../assets/img/carousel-item2.jpg">
       <img class="carousel-item" src="../assets/img/carousel-item3.jpg">
       <img class="carousel-item" src="../assets/img/carousel-item4.jpg">
       <img class="carousel-item" src="../assets/img/carousel-item5.jpg">
     </Slick>
-    <font-awesome-icon class="arrows arrow-right" icon="chevron-right"/>
+    <font-awesome-icon @click="next" class="arrows arrow-right" icon="chevron-right"/>
   </div>
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       slickOptions: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         autoplay: true,
         arrows: false,
@@ -27,19 +28,35 @@ export default {
       },
     };
   },
+  methods: {
+        next() {
+            this.$refs.slick.next();
+        },
+
+        prev() {
+            this.$refs.slick.prev();
+        },
+      },
 }
 </script>
-
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/scss/main.scss';
 .carousel {
   background-color: $white;
   padding: 10rem 0rem;
 }
+.slick-list {
+  text-align: center;
+}
 .carousel-item {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  display: block !important;
+  width: 270px !important;
+  height: 270px !important;
+  margin: 0 auto !important;
+}
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
 }
 .arrows {
   color: $black;
