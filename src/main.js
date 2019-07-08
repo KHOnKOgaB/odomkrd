@@ -13,12 +13,18 @@ import {
   faVk,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faChevronRight,
+  faChevronLeft,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(
   faInstagram,
   faVk,
   faYoutube,
+  faChevronRight,
+  faChevronLeft,
 );
 
 

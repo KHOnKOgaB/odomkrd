@@ -5,11 +5,11 @@
     </div>
     <b-container class="ministr-container position-relative">
       <b-row v-for="(item, index) in items" :key="index" class="justify-content-around mb-5 ministr-border">
-        <b-col cols="12" lg="6" class="my-auto">
+        <b-col data-aos="fade-right" cols="12" lg="6" class="my-auto">
           <h3 class="h3-font text-uppercase">{{item.title}}</h3>
           <p class="article mt-4">{{item.body}}</p>
         </b-col>
-        <b-col cols="12" lg="4" class="my-auto">
+        <b-col data-aos="fade-left" cols="12" lg="4" class="my-auto">
           <img class="ministr-img" :src="item.img">
         </b-col>
       </b-row>
