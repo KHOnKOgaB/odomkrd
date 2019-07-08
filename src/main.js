@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import AOS from 'aos';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
@@ -33,6 +35,7 @@ Vue.config.productionTip = false
 Vue.component('Slick',Slick);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.use(BootstrapVue);
+Vue.use(VueAxios, axios);
 AOS.init();
 
 new Vue({
