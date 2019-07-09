@@ -1,8 +1,10 @@
 <template lang="html">
-  <div class="ministries">
-    <div class="ministries-header">
-      <h1 class="h1-font text-white text-uppercase text-center">жизнь церкви</h1>
-    </div>
+<div class="ministries">
+    <b-container fluid class="p-0">
+      <div class="ministries-header">
+        <h1 class="h1-font text-white text-uppercase text-center">жизнь церкви</h1>
+      </div>
+    </b-container>
     <b-container class="ministr-container position-relative">
       <b-row v-for="(item, index) in items" :key="index" class="justify-content-around mb-5 ministr-border">
         <b-col data-aos="fade-right" cols="12" lg="6" class="my-auto">
@@ -57,7 +59,8 @@ export default {
   padding: 5rem 0rem;
 }
 .ministr-container {
-  padding: 6rem 0rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .ministr-border {
   &::after {

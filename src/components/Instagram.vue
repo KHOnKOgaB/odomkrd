@@ -5,8 +5,10 @@
       v-for="(item, index) in photos"
       :key="index"
       cols="12"
-      lg="4">
-        <a :href="item.link"><img class="inst-img" :src="item.thumbnail"></a>
+      lg="4"
+      sm="6"
+      class="text-center">
+        <a target="_blank" :href="item.link"><img class="inst-img" :src="item.thumbnail"></a>
       </b-col>
     </b-row>
   </b-container>
@@ -33,11 +35,20 @@ export default {
 @import '../assets/scss/main.scss';
 .instagram {
   background-color: $white;
-  padding: 2rem 0rem 8rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  @include media-breakpoint-down(sm) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 .inst-img {
   width: 294px;
   height: 294px;
+  @include media-breakpoint-down(sm) {
+    width: 150px;
+    height: 150px;
+  }
   &:first-child {
     margin-bottom: 2rem;
   }

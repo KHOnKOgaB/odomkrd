@@ -6,5 +6,7 @@
 </template>
 
 <style lang="scss">
-
+  #app {
+    overflow-x: hidden;
+  }
 </style>

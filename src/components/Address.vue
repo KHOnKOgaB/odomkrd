@@ -18,6 +18,7 @@ export default {
 .address {
   background-color: $white;
   padding: 5rem 0;
+  z-index: 100;
 }
 .how-to {
   border: 1px solid $black;
