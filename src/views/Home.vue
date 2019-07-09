@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <vue-headful
+    title="Добро пожаловать в церковь 'Отчим Дом' г. Краснодара"
+    description="Церковь, в которой рады каждому"
+    />
     <Banner></Banner>
     <Address></Address>
     <Events></Events>

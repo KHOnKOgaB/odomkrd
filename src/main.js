@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import Slick from 'vue-slick';
 import '../node_modules/slick-carousel/slick/slick.css';
 import VideoBg from 'vue-videobg';
+import vueHeadful from 'vue-headful';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faInstagram,
@@ -36,6 +37,7 @@ Vue.config.productionTip = false
 Vue.component('Slick',Slick);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('video-bg', VideoBg);
+Vue.component('vue-headful', vueHeadful);
 Vue.use(BootstrapVue);
 Vue.use(VueAxios, axios);
 AOS.init();
