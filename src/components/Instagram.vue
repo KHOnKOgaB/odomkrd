@@ -5,8 +5,10 @@
       v-for="(item, index) in photos"
       :key="index"
       cols="12"
-      lg="4">
-        <a :href="item.link"><img class="inst-img" :src="item.img"></a>
+      lg="4"
+      sm="6"
+      class="text-center">
+        <a target="_blank" :href="item.link"><img class="inst-img" :src="item.thumbnail"></a>
       </b-col>
     </b-row>
   </b-container>
@@ -16,33 +18,15 @@
 export default {
   data(){
     return {
-      photos: [
-        {
-          link: 'https://www.instagram.com/p/BvyfEjRFOi8/',
-          img: require('../assets/img/inst1.png')
-        },
-        {
-          link: 'https://www.instagram.com/p/BvWcdAzF5lF/',
-          img: require('../assets/img/inst2.png')
-        },
-        {
-          link: 'https://www.instagram.com/p/BvPMXmHljl3/',
-          img: require('../assets/img/inst3.png')
-        },
-        {
-          link: 'https://www.instagram.com/p/BvJXAPpls5s/',
-          img: require('../assets/img/inst4.png')
-        },
-        {
-          link: 'https://www.instagram.com/p/Bu8DVGQl3Dw/',
-          img: require('../assets/img/inst5.png')
-        },
-        {
-          link: 'https://www.instagram.com/p/Bu1argTFz1e/',
-          img: require('../assets/img/inst6.png')
-        },
-      ]
+      photos: [],
     }
+  },
+  created(){
+    this.axios.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Frss.app%2Ffeeds%2F2vmUi4oj7qt3336a.xml')
+    .then(res => {
+        this.photos = res.data.items.slice(0,6);
+    }
+    )
   }
 }
 </script>
@@ -51,11 +35,20 @@ export default {
 @import '../assets/scss/main.scss';
 .instagram {
   background-color: $white;
-  padding: 2rem 0rem 8rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  @include media-breakpoint-down(sm) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 .inst-img {
   width: 294px;
   height: 294px;
+  @include media-breakpoint-down(sm) {
+    width: 150px;
+    height: 150px;
+  }
   &:first-child {
     margin-bottom: 2rem;
   }

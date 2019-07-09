@@ -25,6 +25,15 @@ export default {
         autoplay: true,
         arrows: false,
         autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       },
     };
   },
@@ -44,6 +53,9 @@ export default {
 .carousel {
   background-color: $white;
   padding: 10rem 0rem;
+  @include media-breakpoint-down(sm) {
+    padding: 5rem 0rem;
+  }
 }
 .slick-list {
   text-align: center;

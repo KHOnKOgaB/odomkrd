@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-$font-family-sans-serif: 'Montserrat';
 
 .h1-font {
   font-size: 5rem;
   font-weight: bold;
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
 }
 .h2-font {
   font-size: 2rem;
   font-weight: bold;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.2rem;
+  }
 }
 .h3-font {
   font-size: 1.2rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 1rem;
+  }
 }
