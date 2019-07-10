@@ -20,12 +20,19 @@ export default {
     return {
       slickOptions: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         infinite: true,
         autoplay: true,
         arrows: false,
         autoplaySpeed: 2000,
         responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
           {
             breakpoint: 480,
             settings: {

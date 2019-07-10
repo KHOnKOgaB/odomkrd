@@ -4,9 +4,10 @@
       <b-col
       v-for="(item, index) in photos"
       :key="index"
-      cols="12"
-      lg="4"
+      cols="6"
       sm="6"
+      lg="4"
+      md="6"
       class="text-center">
         <a target="_blank" :href="item.link"><img class="inst-img" :src="item.thumbnail"></a>
       </b-col>
@@ -38,16 +39,17 @@ export default {
   padding-top: 2rem;
   padding-bottom: 8rem;
   @include media-breakpoint-down(sm) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 .inst-img {
   width: 294px;
   height: 294px;
   @include media-breakpoint-down(sm) {
-    width: 150px;
+    max-width: 100%;
     height: 150px;
+    object-fit: cover;
   }
   &:first-child {
     margin-bottom: 2rem;

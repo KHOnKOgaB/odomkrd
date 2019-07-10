@@ -61,6 +61,10 @@ export default {
 .ministr-container {
   padding-top: 6rem;
   padding-bottom: 6rem;
+  @include media-breakpoint-down(sm) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 .ministr-border {
   &::after {
