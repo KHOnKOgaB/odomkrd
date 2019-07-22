@@ -59,9 +59,11 @@ export default {
 @import '../assets/scss/main.scss';
 .carousel {
   background-color: $white;
-  padding: 10rem 0rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   @include media-breakpoint-down(sm) {
-    padding: 5rem 0rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 .slick-list {

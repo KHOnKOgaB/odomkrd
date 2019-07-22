@@ -4,8 +4,8 @@
       <b-col
       v-for="(item, index) in photos"
       :key="index"
-      cols="6"
-      sm="6"
+      cols="12"
+      sm="12"
       lg="4"
       md="6"
       class="text-center">
@@ -23,9 +23,9 @@ export default {
     }
   },
   created(){
-    this.axios.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Frss.app%2Ffeeds%2F2vmUi4oj7qt3336a.xml')
+    this.axios.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Frss.app%2Ffeeds%2FfNgJV1zh5PRJtd7z.xml')
     .then(res => {
-        this.photos = res.data.items.slice(0,6);
+        this.photos = res.data.items.slice(0,3);
     }
     )
   }
@@ -44,11 +44,12 @@ export default {
   }
 }
 .inst-img {
-  width: 294px;
-  height: 294px;
+  width: 300px;
+  height: 300px;
   @include media-breakpoint-down(sm) {
     max-width: 100%;
-    height: 150px;
+    width: 225px;
+    height: 225px;
     object-fit: cover;
   }
   &:first-child {

@@ -1,7 +1,7 @@
 <template lang="html">
 <div class="ministries">
     <b-container fluid class="p-0">
-      <div class="ministries-header">
+      <div class="ministries-header shadow">
         <h1 class="h1-font text-white text-uppercase text-center">жизнь церкви</h1>
       </div>
     </b-container>

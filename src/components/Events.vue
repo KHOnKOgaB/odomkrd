@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="events">
-    <div class="events-header text-center">
+    <div class="events-header shadow text-center">
       <h1 class="h1-font text-uppercase text-white">мероприятия</h1>
     </div>
     <Carousel></Carousel>
