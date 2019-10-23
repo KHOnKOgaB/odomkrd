@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="faith">
-    <div class="faith-header">
+    <div class="faith-header" data-aos="fade-up">
       <h1 class="h1-font text-uppercase text-white text-center">во что мы верим</h1>
     </div>
     <b-container class="py-5">

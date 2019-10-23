@@ -2,8 +2,8 @@
   <div class="banner d-flex flex-column">
       <Header></Header>
       <div class="text-center my-auto">
-        <h1 class="text-uppercase text-white h1-font">церковь <br> "отчий дом"</h1>
-        <p class="text-uppercase text-white mt-5 info">наша история</p>
+        <h1 class="text-uppercase text-white h1-shadow h1-font">церковь<br>"отчий дом"</h1>
+        <p class="text-uppercase text-white h1-shadow mt-5 info">наша история</p>
       </div>
   </div>
 </template>
@@ -29,5 +29,8 @@ export default {
 
 .info {
   font-size: 1.5rem;
+}
+.h1-shadow {
+  text-shadow: 2px 2px 3px black;
 }
 </style>

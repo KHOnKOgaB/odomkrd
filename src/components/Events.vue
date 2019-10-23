@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="events">
-    <div class="events-header shadow text-center">
-      <h1 class="h1-font text-uppercase text-white">мероприятия</h1>
+    <div class="events-header shadow text-center" data-aos="fade-up">
+      <h1 class="h1-font text-uppercase h1-shadow text-white">мероприятия</h1>
     </div>
     <Carousel></Carousel>
   </div>
@@ -26,5 +26,8 @@ export default {
   background: url('../assets/img/events.png') no-repeat;
   background-size: cover;
   padding: 5rem 0rem;
+}
+.h1-shadow {
+  text-shadow: 2px 2px 3px black;
 }
 </style>
