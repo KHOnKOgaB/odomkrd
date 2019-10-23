@@ -28,7 +28,6 @@ export default {
   flex-direction: column;
 }
 .banner {
-  // background: url('../assets/img/fp_background.png') no-repeat;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -38,5 +37,6 @@ export default {
 }
 .banner-text {
   z-index: 10;
+  text-shadow: 2px 2px 3px black;
 }
 </style>
