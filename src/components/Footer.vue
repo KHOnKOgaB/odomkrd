@@ -16,7 +16,12 @@
     <div class="contacts">
       <div class="contacts-item mb-2"><a href="tel: +79183165305">+7 (918) 316 - 53 - 05</a></div>
       <div class="contacts-item mb-2"><a target="_blank" href="https://yandex.ru/maps/-/CCgaFXJ1">г. Краснодар, ул. Стадионная, д. 45</a></div>
-      <div class="contacts-item mb-2"><a href="mailto:odomkrd@gmail.com">odom.krd@gmail.com</a></div>
+      <div class="contacts-item"><a href="mailto:odomkrd@gmail.com">odom.krd@gmail.com</a></div>
+    </div>
+    <div class="legals text-white mt-4">
+        <div class="legals-item mb-2">Местная религиозная организация Церковь Христиан Веры Евангельской "Отчий дом" (г. Краснодар)</div>
+        <div class="legals-item mb-2">ОГРН 1062300005932 /// ИНН 2310115750 /// Свидетельство о государственной регистрации №23006727262 от 25.04.2006 года</div>
+        <div class="legals-item mb-2"></div>
     </div>
   </div>
 </template>
@@ -26,11 +31,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/scss/main.scss';
 .footer {
   background-color: #2f2f2f;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
 }
 .social-icon {
   color: $white;
@@ -54,5 +59,8 @@ export default {
       color: #FFCB26;
     }
   }
+}
+.legals {
+
 }
 </style>

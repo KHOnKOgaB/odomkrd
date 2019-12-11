@@ -47,6 +47,7 @@ export default {
 .inst-img {
   width: 300px;
   height: 300px;
+  object-fit: cover;
   @include media-breakpoint-down(sm) {
     max-width: 100%;
     width: 225px;
