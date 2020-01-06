@@ -19,9 +19,8 @@
       <div class="contacts-item"><a href="mailto:odomkrd@gmail.com">odom.krd@gmail.com</a></div>
     </div>
     <div class="legals text-white mt-4">
-        <div class="legals-item mb-2">Местная религиозная организация Церковь Христиан Веры Евангельской "Отчий дом" (г. Краснодар)</div>
+        <div class="legals-item mb-2">Местная религиозная организация Церковь Христиан Веры Евангельской "Отчий дом" г. Краснодар</div>
         <div class="legals-item mb-2">ОГРН 1062300005932 /// ИНН 2310115750 /// Свидетельство о государственной регистрации №23006727262 от 25.04.2006 года</div>
-        <div class="legals-item mb-2"></div>
     </div>
   </div>
 </template>
