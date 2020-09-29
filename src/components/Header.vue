@@ -9,7 +9,7 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/" class="text-uppercase">главная</b-nav-item>
           <b-nav-item target="_blank" href="https://www.youtube.com/channel/UCTKXg01q41ORpRbPbxwTVxQ" class="text-uppercase">медиа</b-nav-item>
-          <b-nav-item target="_blank" href="http://odradio.ru" class="text-uppercase">радио</b-nav-item>
+          <b-nav-item target="_blank" href="https://forms.gle/D9m5zSUmHyMh92JK9" class="text-uppercase">вопрос пастору</b-nav-item>
           <b-nav-item to="/about" class="text-uppercase">о нас</b-nav-item>
         </b-navbar-nav>
       </b-collapse>

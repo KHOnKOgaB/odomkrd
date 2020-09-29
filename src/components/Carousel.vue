@@ -4,7 +4,7 @@
     <Slick
     ref="slick"
     :options="slickOptions">
-      <img class="carousel-item" src="../assets/img/carousel-item1.jpg">
+      <a href="https://www.youtube.com/playlist?list=PLgg3n8VP4oqp_t_mbRzHzvm1tI8wORYLL"><img class="carousel-item" src="../assets/img/carousel-item1.jpg"></a>
       <img class="carousel-item" src="../assets/img/carousel-item2.jpg">
       <img class="carousel-item" src="../assets/img/carousel-item3.jpg">
       <img class="carousel-item" src="../assets/img/carousel-item4.jpg">

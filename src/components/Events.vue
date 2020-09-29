@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="events">
     <div class="events-header shadow text-center" data-aos="fade-up">
-      <h1 class="h1-font text-uppercase h1-shadow text-white">мероприятия</h1>
+      <h1 class="h1-font text-uppercase h1-shadow text-white">наши рубрики</h1>
     </div>
     <Carousel></Carousel>
   </div>
