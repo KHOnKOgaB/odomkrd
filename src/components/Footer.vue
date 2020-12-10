@@ -14,7 +14,7 @@
       </b-nav>
     </div>
     <div class="contacts">
-      <div class="contacts-item mb-2"><a href="tel: +79183165305">+7 (918) 316 - 53 - 05</a></div>
+      <div class="contacts-item mb-2"><a href="tel: +79649388737">+7(964)-938-87-37</a></div>
       <div class="contacts-item mb-2"><a target="_blank" href="https://yandex.ru/maps/-/CCgaFXJ1">г. Краснодар, ул. Стадионная, д. 45</a></div>
       <div class="contacts-item"><a href="mailto:odomkrd@gmail.com">odom.krd@gmail.com</a></div>
     </div>
